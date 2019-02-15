@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E5371FAADCB00D72A518AD3 /* Pods_MyWorkoutAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60263027B5FBE5812871970 /* Pods_MyWorkoutAppTests.framework */; };
+		27073A543FF8DFD2AFA5171F /* Pods_MyWorkoutApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EBF4D966BCA88A597C88CB /* Pods_MyWorkoutApp.framework */; };
+		38340442DA1EE1CDAC724886 /* Pods_MyWorkoutAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22883C059488ADBB57E4D7DF /* Pods_MyWorkoutAppUITests.framework */; };
+		B6038FEB21A6D69500BA8704 /* WorkoutsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6038FEA21A6D69500BA8704 /* WorkoutsTableViewController.swift */; };
+		B6038FED21A6D6B000BA8704 /* WorkoutsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6038FEC21A6D6B000BA8704 /* WorkoutsTableViewCell.swift */; };
+		B61101EF219D5D3800571743 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61101EE219D5D3800571743 /* Exercise.swift */; };
+		B62C5A7C219D808100E352AD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C5A7B219D808100E352AD /* ProfileViewController.swift */; };
+		B63EDD4521AE7DC10062B0F3 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B63EDD4421AE7DC00062B0F3 /* bg.jpg */; };
+		B63EDD4921AE81AE0062B0F3 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = B63EDD4821AE81AE0062B0F3 /* camera.png */; };
+		B63EDD5121AE837B0062B0F3 /* menu-4.png in Resources */ = {isa = PBXBuildFile; fileRef = B63EDD5021AE837A0062B0F3 /* menu-4.png */; };
+		B63EDD5321AE83B00062B0F3 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = B63EDD5221AE83B00062B0F3 /* logout.png */; };
+		B63EDD5521AED1500062B0F3 /* FinishWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63EDD5421AED1500062B0F3 /* FinishWorkoutViewController.swift */; };
+		B63EDD5721AEDA130062B0F3 /* FinishWorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63EDD5621AEDA130062B0F3 /* FinishWorkoutTableViewCell.swift */; };
+		B640BD9A21AC1ABE003E21AA /* AddWorkoutsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD9921AC1ABE003E21AA /* AddWorkoutsTableViewController.swift */; };
+		B640BD9C21AC1C47003E21AA /* AddWorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD9B21AC1C47003E21AA /* AddWorkoutTableViewCell.swift */; };
+		B642A194219EA6BC00BD15F2 /* ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B642A193219EA6BC00BD15F2 /* ExerciseTableViewController.swift */; };
+		B65B9E7F219C60980033D6C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B9E7E219C60980033D6C1 /* AppDelegate.swift */; };
+		B65B9E81219C60980033D6C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B9E80219C60980033D6C1 /* ViewController.swift */; };
+		B65B9E84219C60980033D6C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65B9E82219C60980033D6C1 /* Main.storyboard */; };
+		B65B9E86219C60980033D6C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65B9E85219C60980033D6C1 /* Assets.xcassets */; };
+		B65B9E89219C60980033D6C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65B9E87219C60980033D6C1 /* LaunchScreen.storyboard */; };
+		B65B9E94219C60980033D6C1 /* MyWorkoutAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B9E93219C60980033D6C1 /* MyWorkoutAppTests.swift */; };
+		B65B9E9F219C60980033D6C1 /* MyWorkoutAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B9E9E219C60980033D6C1 /* MyWorkoutAppUITests.swift */; };
+		B6812C1C21AFC50600D6B889 /* WorkedWorkoutDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6812C1B21AFC50600D6B889 /* WorkedWorkoutDetailTableViewCell.swift */; };
+		B6812C2021AFC78800D6B889 /* WorkedWorkoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6812C1F21AFC78800D6B889 /* WorkedWorkoutDetailViewController.swift */; };
+		B6A8C40E219F0030009F45E9 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A8C40D219F0030009F45E9 /* ExerciseTableViewCell.swift */; };
+		B6E111D921AD448500FCECC9 /* FinalAddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E111D821AD448500FCECC9 /* FinalAddWorkoutViewController.swift */; };
+		B6E111DB21AD44C100FCECC9 /* FinalAddWorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E111DA21AD44C100FCECC9 /* FinalAddWorkoutTableViewCell.swift */; };
+		B6E111DD21AD772500FCECC9 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E111DC21AD772500FCECC9 /* Workout.swift */; };
+		B6E111DF21AD882900FCECC9 /* WorkoutDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E111DE21AD882900FCECC9 /* WorkoutDetailTableViewCell.swift */; };
+		B6E111E121AD885600FCECC9 /* WorkoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E111E021AD885600FCECC9 /* WorkoutDetailViewController.swift */; };
+		B6EBD123219EBDFC00BE8BFC /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EBD122219EBDFC00BE8BFC /* AddExerciseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B65B9E90219C60980033D6C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B65B9E73219C60980033D6C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B65B9E7A219C60980033D6C1;
+			remoteInfo = MyWorkoutApp;
+		};
+		B65B9E9B219C60980033D6C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B65B9E73219C60980033D6C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B65B9E7A219C60980033D6C1;
+			remoteInfo = MyWorkoutApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07365AFF7D9F69F52B6BA1D5 /* Pods-MyWorkoutAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWorkoutAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWorkoutAppTests/Pods-MyWorkoutAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		15B4F6F378A44969EC70D6CA /* Pods-MyWorkoutAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWorkoutAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWorkoutAppTests/Pods-MyWorkoutAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		22883C059488ADBB57E4D7DF /* Pods_MyWorkoutAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWorkoutAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6341E6451C8953338435FA8C /* Pods-MyWorkoutApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWorkoutApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWorkoutApp/Pods-MyWorkoutApp.debug.xcconfig"; sourceTree = "<group>"; };
+		70D6368B3BB8F9F4B877AFE0 /* Pods-MyWorkoutAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWorkoutAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWorkoutAppUITests/Pods-MyWorkoutAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B60263027B5FBE5812871970 /* Pods_MyWorkoutAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWorkoutAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6038FEA21A6D69500BA8704 /* WorkoutsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsTableViewController.swift; sourceTree = "<group>"; };
+		B6038FEC21A6D6B000BA8704 /* WorkoutsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsTableViewCell.swift; sourceTree = "<group>"; };
+		B61101EE219D5D3800571743 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		B62C5A7B219D808100E352AD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B63EDD4421AE7DC00062B0F3 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		B63EDD4821AE81AE0062B0F3 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		B63EDD5021AE837A0062B0F3 /* menu-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-4.png"; sourceTree = "<group>"; };
+		B63EDD5221AE83B00062B0F3 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		B63EDD5421AED1500062B0F3 /* FinishWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishWorkoutViewController.swift; sourceTree = "<group>"; };
+		B63EDD5621AEDA130062B0F3 /* FinishWorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishWorkoutTableViewCell.swift; sourceTree = "<group>"; };
+		B640BD9921AC1ABE003E21AA /* AddWorkoutsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutsTableViewController.swift; sourceTree = "<group>"; };
+		B640BD9B21AC1C47003E21AA /* AddWorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutTableViewCell.swift; sourceTree = "<group>"; };
+		B642A193219EA6BC00BD15F2 /* ExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewController.swift; sourceTree = "<group>"; };
+		B65B9E7B219C60980033D6C1 /* MyWorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B65B9E7E219C60980033D6C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B65B9E80219C60980033D6C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B65B9E83219C60980033D6C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B65B9E85219C60980033D6C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B65B9E88219C60980033D6C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B65B9E8A219C60980033D6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B65B9E8F219C60980033D6C1 /* MyWorkoutAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWorkoutAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B65B9E93219C60980033D6C1 /* MyWorkoutAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkoutAppTests.swift; sourceTree = "<group>"; };
+		B65B9E95219C60980033D6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B65B9E9A219C60980033D6C1 /* MyWorkoutAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWorkoutAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B65B9E9E219C60980033D6C1 /* MyWorkoutAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkoutAppUITests.swift; sourceTree = "<group>"; };
+		B65B9EA0219C60980033D6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6812C1B21AFC50600D6B889 /* WorkedWorkoutDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkedWorkoutDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B6812C1F21AFC78800D6B889 /* WorkedWorkoutDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkedWorkoutDetailViewController.swift; sourceTree = "<group>"; };
+		B6A8C40D219F0030009F45E9 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		B6E111D821AD448500FCECC9 /* FinalAddWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalAddWorkoutViewController.swift; sourceTree = "<group>"; };
+		B6E111DA21AD44C100FCECC9 /* FinalAddWorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalAddWorkoutTableViewCell.swift; sourceTree = "<group>"; };
+		B6E111DC21AD772500FCECC9 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		B6E111DE21AD882900FCECC9 /* WorkoutDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B6E111E021AD885600FCECC9 /* WorkoutDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailViewController.swift; sourceTree = "<group>"; };
+		B6EBD122219EBDFC00BE8BFC /* AddExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseViewController.swift; sourceTree = "<group>"; };
+		D5E544DA59B3AB8C61D405E4 /* Pods-MyWorkoutApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWorkoutApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWorkoutApp/Pods-MyWorkoutApp.release.xcconfig"; sourceTree = "<group>"; };
+		E2CAC79AC14E90D1B9A8FD29 /* Pods-MyWorkoutAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWorkoutAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWorkoutAppUITests/Pods-MyWorkoutAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0EBF4D966BCA88A597C88CB /* Pods_MyWorkoutApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWorkoutApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B65B9E78219C60980033D6C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27073A543FF8DFD2AFA5171F /* Pods_MyWorkoutApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65B9E8C219C60980033D6C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E5371FAADCB00D72A518AD3 /* Pods_MyWorkoutAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65B9E97219C60980033D6C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38340442DA1EE1CDAC724886 /* Pods_MyWorkoutAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		208F83F9CB5F1988B2927561 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0EBF4D966BCA88A597C88CB /* Pods_MyWorkoutApp.framework */,
+				B60263027B5FBE5812871970 /* Pods_MyWorkoutAppTests.framework */,
+				22883C059488ADBB57E4D7DF /* Pods_MyWorkoutAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CBCD788FD84543DB3B8B7D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6341E6451C8953338435FA8C /* Pods-MyWorkoutApp.debug.xcconfig */,
+				D5E544DA59B3AB8C61D405E4 /* Pods-MyWorkoutApp.release.xcconfig */,
+				07365AFF7D9F69F52B6BA1D5 /* Pods-MyWorkoutAppTests.debug.xcconfig */,
+				15B4F6F378A44969EC70D6CA /* Pods-MyWorkoutAppTests.release.xcconfig */,
+				E2CAC79AC14E90D1B9A8FD29 /* Pods-MyWorkoutAppUITests.debug.xcconfig */,
+				70D6368B3BB8F9F4B877AFE0 /* Pods-MyWorkoutAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B61101ED219D5D2A00571743 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B61101EE219D5D3800571743 /* Exercise.swift */,
+				B6E111DC21AD772500FCECC9 /* Workout.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B658980222169FF500D78770 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B6812C1B21AFC50600D6B889 /* WorkedWorkoutDetailTableViewCell.swift */,
+				B63EDD5621AEDA130062B0F3 /* FinishWorkoutTableViewCell.swift */,
+				B6E111DE21AD882900FCECC9 /* WorkoutDetailTableViewCell.swift */,
+				B6E111DA21AD44C100FCECC9 /* FinalAddWorkoutTableViewCell.swift */,
+				B640BD9B21AC1C47003E21AA /* AddWorkoutTableViewCell.swift */,
+				B6038FEC21A6D6B000BA8704 /* WorkoutsTableViewCell.swift */,
+				B6A8C40D219F0030009F45E9 /* ExerciseTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B65B9E72219C60980033D6C1 = {
+			isa = PBXGroup;
+			children = (
+				B65B9E7D219C60980033D6C1 /* MyWorkoutApp */,
+				B65B9E92219C60980033D6C1 /* MyWorkoutAppTests */,
+				B65B9E9D219C60980033D6C1 /* MyWorkoutAppUITests */,
+				B65B9E7C219C60980033D6C1 /* Products */,
+				4CBCD788FD84543DB3B8B7D8 /* Pods */,
+				208F83F9CB5F1988B2927561 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B65B9E7C219C60980033D6C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B65B9E7B219C60980033D6C1 /* MyWorkoutApp.app */,
+				B65B9E8F219C60980033D6C1 /* MyWorkoutAppTests.xctest */,
+				B65B9E9A219C60980033D6C1 /* MyWorkoutAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B65B9E7D219C60980033D6C1 /* MyWorkoutApp */ = {
+			isa = PBXGroup;
+			children = (
+				B658980222169FF500D78770 /* Cells */,
+				B6812C2221AFE0F200D6B889 /* Controllers */,
+				B6812C2121AFE0DE00D6B889 /* View */,
+				B61101ED219D5D2A00571743 /* Model */,
+				B65B9E7E219C60980033D6C1 /* AppDelegate.swift */,
+				B65B9E85219C60980033D6C1 /* Assets.xcassets */,
+				B65B9E8A219C60980033D6C1 /* Info.plist */,
+				B63EDD4821AE81AE0062B0F3 /* camera.png */,
+				B63EDD5021AE837A0062B0F3 /* menu-4.png */,
+				B63EDD4421AE7DC00062B0F3 /* bg.jpg */,
+				B63EDD5221AE83B00062B0F3 /* logout.png */,
+			);
+			path = MyWorkoutApp;
+			sourceTree = "<group>";
+		};
+		B65B9E92219C60980033D6C1 /* MyWorkoutAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B65B9E93219C60980033D6C1 /* MyWorkoutAppTests.swift */,
+				B65B9E95219C60980033D6C1 /* Info.plist */,
+			);
+			path = MyWorkoutAppTests;
+			sourceTree = "<group>";
+		};
+		B65B9E9D219C60980033D6C1 /* MyWorkoutAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B65B9E9E219C60980033D6C1 /* MyWorkoutAppUITests.swift */,
+				B65B9EA0219C60980033D6C1 /* Info.plist */,
+			);
+			path = MyWorkoutAppUITests;
+			sourceTree = "<group>";
+		};
+		B6812C2121AFE0DE00D6B889 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B65B9E87219C60980033D6C1 /* LaunchScreen.storyboard */,
+				B65B9E82219C60980033D6C1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6812C2221AFE0F200D6B889 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B65B9E80219C60980033D6C1 /* ViewController.swift */,
+				B62C5A7B219D808100E352AD /* ProfileViewController.swift */,
+				B642A193219EA6BC00BD15F2 /* ExerciseTableViewController.swift */,
+				B6EBD122219EBDFC00BE8BFC /* AddExerciseViewController.swift */,
+				B6038FEA21A6D69500BA8704 /* WorkoutsTableViewController.swift */,
+				B640BD9921AC1ABE003E21AA /* AddWorkoutsTableViewController.swift */,
+				B6E111D821AD448500FCECC9 /* FinalAddWorkoutViewController.swift */,
+				B6E111E021AD885600FCECC9 /* WorkoutDetailViewController.swift */,
+				B63EDD5421AED1500062B0F3 /* FinishWorkoutViewController.swift */,
+				B6812C1F21AFC78800D6B889 /* WorkedWorkoutDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B65B9E7A219C60980033D6C1 /* MyWorkoutApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B65B9EA3219C60980033D6C1 /* Build configuration list for PBXNativeTarget "MyWorkoutApp" */;
+			buildPhases = (
+				19E7353011B85D49EFAE6A6F /* [CP] Check Pods Manifest.lock */,
+				B65B9E77219C60980033D6C1 /* Sources */,
+				B65B9E78219C60980033D6C1 /* Frameworks */,
+				B65B9E79219C60980033D6C1 /* Resources */,
+				EF9E6A00D2B95E3699140B2F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyWorkoutApp;
+			productName = MyWorkoutApp;
+			productReference = B65B9E7B219C60980033D6C1 /* MyWorkoutApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B65B9E8E219C60980033D6C1 /* MyWorkoutAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B65B9EA6219C60980033D6C1 /* Build configuration list for PBXNativeTarget "MyWorkoutAppTests" */;
+			buildPhases = (
+				A1CE361ACD5F54EBEE322630 /* [CP] Check Pods Manifest.lock */,
+				B65B9E8B219C60980033D6C1 /* Sources */,
+				B65B9E8C219C60980033D6C1 /* Frameworks */,
+				B65B9E8D219C60980033D6C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B65B9E91219C60980033D6C1 /* PBXTargetDependency */,
+			);
+			name = MyWorkoutAppTests;
+			productName = MyWorkoutAppTests;
+			productReference = B65B9E8F219C60980033D6C1 /* MyWorkoutAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B65B9E99219C60980033D6C1 /* MyWorkoutAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B65B9EA9219C60980033D6C1 /* Build configuration list for PBXNativeTarget "MyWorkoutAppUITests" */;
+			buildPhases = (
+				FC3FF243E4261526DED8252C /* [CP] Check Pods Manifest.lock */,
+				B65B9E96219C60980033D6C1 /* Sources */,
+				B65B9E97219C60980033D6C1 /* Frameworks */,
+				B65B9E98219C60980033D6C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B65B9E9C219C60980033D6C1 /* PBXTargetDependency */,
+			);
+			name = MyWorkoutAppUITests;
+			productName = MyWorkoutAppUITests;
+			productReference = B65B9E9A219C60980033D6C1 /* MyWorkoutAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B65B9E73219C60980033D6C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Gokhan Kilic";
+				TargetAttributes = {
+					B65B9E7A219C60980033D6C1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B65B9E8E219C60980033D6C1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B65B9E7A219C60980033D6C1;
+					};
+					B65B9E99219C60980033D6C1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B65B9E7A219C60980033D6C1;
+					};
+				};
+			};
+			buildConfigurationList = B65B9E76219C60980033D6C1 /* Build configuration list for PBXProject "MyWorkoutApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B65B9E72219C60980033D6C1;
+			productRefGroup = B65B9E7C219C60980033D6C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B65B9E7A219C60980033D6C1 /* MyWorkoutApp */,
+				B65B9E8E219C60980033D6C1 /* MyWorkoutAppTests */,
+				B65B9E99219C60980033D6C1 /* MyWorkoutAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B65B9E79219C60980033D6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65B9E89219C60980033D6C1 /* LaunchScreen.storyboard in Resources */,
+				B63EDD4521AE7DC10062B0F3 /* bg.jpg in Resources */,
+				B65B9E86219C60980033D6C1 /* Assets.xcassets in Resources */,
+				B63EDD5121AE837B0062B0F3 /* menu-4.png in Resources */,
+				B65B9E84219C60980033D6C1 /* Main.storyboard in Resources */,
+				B63EDD5321AE83B00062B0F3 /* logout.png in Resources */,
+				B63EDD4921AE81AE0062B0F3 /* camera.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65B9E8D219C60980033D6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65B9E98219C60980033D6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19E7353011B85D49EFAE6A6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyWorkoutApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1CE361ACD5F54EBEE322630 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyWorkoutAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF9E6A00D2B95E3699140B2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyWorkoutApp/Pods-MyWorkoutApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyWorkoutApp/Pods-MyWorkoutApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC3FF243E4261526DED8252C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyWorkoutAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B65B9E77219C60980033D6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65B9E81219C60980033D6C1 /* ViewController.swift in Sources */,
+				B63EDD5521AED1500062B0F3 /* FinishWorkoutViewController.swift in Sources */,
+				B6812C1C21AFC50600D6B889 /* WorkedWorkoutDetailTableViewCell.swift in Sources */,
+				B6A8C40E219F0030009F45E9 /* ExerciseTableViewCell.swift in Sources */,
+				B61101EF219D5D3800571743 /* Exercise.swift in Sources */,
+				B640BD9C21AC1C47003E21AA /* AddWorkoutTableViewCell.swift in Sources */,
+				B6E111E121AD885600FCECC9 /* WorkoutDetailViewController.swift in Sources */,
+				B642A194219EA6BC00BD15F2 /* ExerciseTableViewController.swift in Sources */,
+				B6812C2021AFC78800D6B889 /* WorkedWorkoutDetailViewController.swift in Sources */,
+				B6038FEB21A6D69500BA8704 /* WorkoutsTableViewController.swift in Sources */,
+				B6EBD123219EBDFC00BE8BFC /* AddExerciseViewController.swift in Sources */,
+				B640BD9A21AC1ABE003E21AA /* AddWorkoutsTableViewController.swift in Sources */,
+				B6E111DF21AD882900FCECC9 /* WorkoutDetailTableViewCell.swift in Sources */,
+				B6E111DD21AD772500FCECC9 /* Workout.swift in Sources */,
+				B6E111D921AD448500FCECC9 /* FinalAddWorkoutViewController.swift in Sources */,
+				B63EDD5721AEDA130062B0F3 /* FinishWorkoutTableViewCell.swift in Sources */,
+				B62C5A7C219D808100E352AD /* ProfileViewController.swift in Sources */,
+				B6E111DB21AD44C100FCECC9 /* FinalAddWorkoutTableViewCell.swift in Sources */,
+				B65B9E7F219C60980033D6C1 /* AppDelegate.swift in Sources */,
+				B6038FED21A6D6B000BA8704 /* WorkoutsTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65B9E8B219C60980033D6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65B9E94219C60980033D6C1 /* MyWorkoutAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65B9E96219C60980033D6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65B9E9F219C60980033D6C1 /* MyWorkoutAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B65B9E91219C60980033D6C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B65B9E7A219C60980033D6C1 /* MyWorkoutApp */;
+			targetProxy = B65B9E90219C60980033D6C1 /* PBXContainerItemProxy */;
+		};
+		B65B9E9C219C60980033D6C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B65B9E7A219C60980033D6C1 /* MyWorkoutApp */;
+			targetProxy = B65B9E9B219C60980033D6C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B65B9E82219C60980033D6C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B65B9E83219C60980033D6C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B65B9E87219C60980033D6C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B65B9E88219C60980033D6C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B65B9EA1219C60980033D6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B65B9EA2219C60980033D6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B65B9EA4219C60980033D6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6341E6451C8953338435FA8C /* Pods-MyWorkoutApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QNYK3LV4Z8;
+				INFOPLIST_FILE = MyWorkoutApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gokhankilic.MyWorkoutApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B65B9EA5219C60980033D6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5E544DA59B3AB8C61D405E4 /* Pods-MyWorkoutApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QNYK3LV4Z8;
+				INFOPLIST_FILE = MyWorkoutApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gokhankilic.MyWorkoutApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B65B9EA7219C60980033D6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07365AFF7D9F69F52B6BA1D5 /* Pods-MyWorkoutAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyWorkoutAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gokhankilic.MyWorkoutAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyWorkoutApp.app/MyWorkoutApp";
+			};
+			name = Debug;
+		};
+		B65B9EA8219C60980033D6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B4F6F378A44969EC70D6CA /* Pods-MyWorkoutAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyWorkoutAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gokhankilic.MyWorkoutAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyWorkoutApp.app/MyWorkoutApp";
+			};
+			name = Release;
+		};
+		B65B9EAA219C60980033D6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2CAC79AC14E90D1B9A8FD29 /* Pods-MyWorkoutAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyWorkoutAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gokhankilic.MyWorkoutAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyWorkoutApp;
+			};
+			name = Debug;
+		};
+		B65B9EAB219C60980033D6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70D6368B3BB8F9F4B877AFE0 /* Pods-MyWorkoutAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyWorkoutAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gokhankilic.MyWorkoutAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyWorkoutApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B65B9E76219C60980033D6C1 /* Build configuration list for PBXProject "MyWorkoutApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B65B9EA1219C60980033D6C1 /* Debug */,
+				B65B9EA2219C60980033D6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B65B9EA3219C60980033D6C1 /* Build configuration list for PBXNativeTarget "MyWorkoutApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B65B9EA4219C60980033D6C1 /* Debug */,
+				B65B9EA5219C60980033D6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B65B9EA6219C60980033D6C1 /* Build configuration list for PBXNativeTarget "MyWorkoutAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B65B9EA7219C60980033D6C1 /* Debug */,
+				B65B9EA8219C60980033D6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B65B9EA9219C60980033D6C1 /* Build configuration list for PBXNativeTarget "MyWorkoutAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B65B9EAA219C60980033D6C1 /* Debug */,
+				B65B9EAB219C60980033D6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B65B9E73219C60980033D6C1 /* Project object */;
+}
