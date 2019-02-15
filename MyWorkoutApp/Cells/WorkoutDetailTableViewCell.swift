@@ -9,7 +9,9 @@
 import UIKit
 
 class WorkoutDetailTableViewCell: UITableViewCell {
-
+    
+    //this cell shows the detail of the workouts such as workout name etc.
+    
     @IBOutlet weak var exerciseRep: UILabel!
     @IBOutlet weak var exerciseName: UILabel!
     @IBOutlet weak var exerciseImage: UIImageView!

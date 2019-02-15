@@ -24,7 +24,7 @@
 		B640BD9C21AC1C47003E21AA /* AddWorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD9B21AC1C47003E21AA /* AddWorkoutTableViewCell.swift */; };
 		B642A194219EA6BC00BD15F2 /* ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B642A193219EA6BC00BD15F2 /* ExerciseTableViewController.swift */; };
 		B65B9E7F219C60980033D6C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B9E7E219C60980033D6C1 /* AppDelegate.swift */; };
-		B65B9E81219C60980033D6C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B9E80219C60980033D6C1 /* ViewController.swift */; };
+		B65B9E81219C60980033D6C1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B9E80219C60980033D6C1 /* MainVC.swift */; };
 		B65B9E84219C60980033D6C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65B9E82219C60980033D6C1 /* Main.storyboard */; };
 		B65B9E86219C60980033D6C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65B9E85219C60980033D6C1 /* Assets.xcassets */; };
 		B65B9E89219C60980033D6C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65B9E87219C60980033D6C1 /* LaunchScreen.storyboard */; };
@@ -80,7 +80,7 @@
 		B642A193219EA6BC00BD15F2 /* ExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewController.swift; sourceTree = "<group>"; };
 		B65B9E7B219C60980033D6C1 /* MyWorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65B9E7E219C60980033D6C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B65B9E80219C60980033D6C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B65B9E80219C60980033D6C1 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B65B9E83219C60980033D6C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B65B9E85219C60980033D6C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B65B9E88219C60980033D6C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 		B6812C2221AFE0F200D6B889 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B65B9E80219C60980033D6C1 /* ViewController.swift */,
+				B65B9E80219C60980033D6C1 /* MainVC.swift */,
 				B62C5A7B219D808100E352AD /* ProfileViewController.swift */,
 				B642A193219EA6BC00BD15F2 /* ExerciseTableViewController.swift */,
 				B6EBD122219EBDFC00BE8BFC /* AddExerciseViewController.swift */,
@@ -495,7 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B65B9E81219C60980033D6C1 /* ViewController.swift in Sources */,
+				B65B9E81219C60980033D6C1 /* MainVC.swift in Sources */,
 				B63EDD5521AED1500062B0F3 /* FinishWorkoutViewController.swift in Sources */,
 				B6812C1C21AFC50600D6B889 /* WorkedWorkoutDetailTableViewCell.swift in Sources */,
 				B6A8C40E219F0030009F45E9 /* ExerciseTableViewCell.swift in Sources */,
@@ -691,13 +691,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QNYK3LV4Z8;
+				DEVELOPMENT_TEAM = BD7S645SQ8;
 				INFOPLIST_FILE = MyWorkoutApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gokhankilic.MyWorkoutApp;
+				PRODUCT_BUNDLE_IDENTIFIER = gokhan.kilic.MyWorkoutApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -710,13 +710,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QNYK3LV4Z8;
+				DEVELOPMENT_TEAM = BD7S645SQ8;
 				INFOPLIST_FILE = MyWorkoutApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gokhankilic.MyWorkoutApp;
+				PRODUCT_BUNDLE_IDENTIFIER = gokhan.kilic.MyWorkoutApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

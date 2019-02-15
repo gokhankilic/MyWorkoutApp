@@ -9,6 +9,8 @@
 import UIKit
 
 class WorkedWorkoutDetailTableViewCell: UITableViewCell {
+    
+    //This cell holds the information about finished workout routines
 
     @IBOutlet weak var repCount: UILabel!
     @IBOutlet weak var exerciseName: UILabel!
@@ -16,13 +18,11 @@ class WorkedWorkoutDetailTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
 
 }

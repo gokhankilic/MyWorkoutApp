@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class FinalAddWorkoutViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UITextViewDelegate {
+class FinalAddWorkoutViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UITextViewDelegate,UITextFieldDelegate {
     
     @IBOutlet weak var workoutCycle: UITextField!
     @IBOutlet weak var workoutDescription: UITextField!
@@ -36,14 +36,18 @@ class FinalAddWorkoutViewController: UIViewController,UITableViewDelegate,UITabl
             
         }
         
-       
-        
         return cell
     }
+    
+    
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        workoutCycle.delegate = self
+        workoutName.delegate = self
+        workoutDescription.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -91,6 +95,11 @@ class FinalAddWorkoutViewController: UIViewController,UITableViewDelegate,UITabl
     @objc private func textFieldDidChange(_ textField: UITextField){
         
         reps[textField.tag] = textField.text
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
     

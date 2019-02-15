@@ -17,6 +17,7 @@ class FinishWorkoutViewController: UIViewController,UITableViewDelegate,UITableV
     @IBOutlet weak var cycleCount: UITextField!
     
     @IBOutlet weak var workoutName: UILabel!
+    @IBOutlet weak var addButton:UIButton!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (workout?.exerciseNames.count)!
@@ -29,6 +30,7 @@ class FinishWorkoutViewController: UIViewController,UITableViewDelegate,UITableV
         
         cell.exerciseRep.tag = indexPath.row
         cell.exerciseRep.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        
         
         
         if let exercise = workout?.exerciseNames[indexPath.row]{
@@ -115,9 +117,8 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.view.endEditing(true)
 }
 
-func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-    textField.resignFirstResponder()
-    return true
-}
+
+    
+    
 }
 

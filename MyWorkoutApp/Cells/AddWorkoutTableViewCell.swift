@@ -10,16 +10,12 @@ import UIKit
 
 class AddWorkoutTableViewCell: UITableViewCell{
     
-   
     
     
     @IBOutlet weak var exerciseName: UILabel!
     @IBOutlet weak var exerciseDescription: UILabel!
-    
     @IBOutlet weak var exerciseDifficulty: UILabel!
-    
     @IBOutlet weak var exerciseImageView: UIImageView!
-    
     @IBOutlet weak var addButton: UIButton!
     
     override func awakeFromNib() {

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="P5z-I8-NNy">
             <objects>
-                <viewController id="unm-sa-qSH" customClass="ViewController" customModule="MyWorkoutApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="unm-sa-qSH" customClass="MainVC" customModule="MyWorkoutApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gez-as-FeR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -663,6 +663,7 @@
                         <viewLayoutGuide key="safeArea" id="3WS-W2-0UZ"/>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="1EB-1c-wQT" id="QMX-OI-MlV"/>
                         <outlet property="cycleCount" destination="NZO-3q-7bM" id="g9e-AX-ioq"/>
                         <outlet property="workoutName" destination="XeV-4D-7dJ" id="LEi-em-rge"/>
                     </connections>

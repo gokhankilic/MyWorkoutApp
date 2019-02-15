@@ -12,7 +12,6 @@ import Parse
 class ProfileViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
@@ -21,8 +20,6 @@ class ProfileViewController: UIViewController,UITableViewDataSource,UITableViewD
     var workedWorkouts:[String] = []
     var workedDates:[String] = []
     var indexPath:Int = 0
-    
-    
     var menuShowing = false
     
     
@@ -34,49 +31,28 @@ class ProfileViewController: UIViewController,UITableViewDataSource,UITableViewD
         let cell = UITableViewCell.init(style: .default, reuseIdentifier: "workedWorkout")
         
         if workedWorkouts.count>0 && workedDates.count>0{
-            
             cell.textLabel?.font = cell.textLabel?.font.withSize(13)
-            
             var date = workedDates[indexPath.row].components(separatedBy: "+")
-            
-
             cell.textLabel?.text = workedWorkouts[indexPath.row] + "\t \(date[0])"
-            
         }
-                
-        
-            
-        
-        
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         self.indexPath = indexPath.row
         performSegue(withIdentifier: "toWorkedDetail", sender: self)
-        
     }
     
     
     
     
     @IBAction func openMenu(_ sender: Any) {
-        
         if menuShowing{
-            
-            
             self.leadingConstraint.constant = -200
-            
-            
-            
-            UIView.animate(withDuration: 0.3) {
-                
+             UIView.animate(withDuration: 0.3) {
                 self.view.layoutIfNeeded()
             }
-            
-            
         }
         else{
             
@@ -101,26 +77,12 @@ class ProfileViewController: UIViewController,UITableViewDataSource,UITableViewD
         profileImageView.layer.cornerRadius = profileImageView.frame.height/2
         profileImageView.clipsToBounds = true
         
-       
-        
         if let  user = PFUser.current() {
-            
             var currentUser = user
-            
             if let userName = currentUser.username{
-                
                 nameLabel.text = userName
-                
             }
-            
-            
         }
-        
-        
-        
-        
-        
-        
     }
     
     
@@ -143,6 +105,8 @@ class ProfileViewController: UIViewController,UITableViewDataSource,UITableViewD
         }
     }
     
+    
+    
     @IBAction func uploadPhoto(_ sender: Any) {
         
         let imagePickerController = UIImagePickerController()
@@ -152,6 +116,8 @@ class ProfileViewController: UIViewController,UITableViewDataSource,UITableViewD
         self.present(imagePickerController, animated: true, completion: nil)
         
     }
+    
+    
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
@@ -178,26 +144,17 @@ class ProfileViewController: UIViewController,UITableViewDataSource,UITableViewD
                                 print("FILE IS READY")
                                 
                                 user["profilePhoto"] = imageFile
-                                
-                                
                                 user.saveInBackground()
                                 
-                                
-                                
                             }
-                            
                         }
-                        
-                        
-                        
-                        
-                        
                     }
-                    
                 }
             })
         }
     }
+    
+    
     
     @IBAction func toExercisePageMenuButton(_ sender: Any) {
         self.leadingConstraint.constant = -200
@@ -226,19 +183,11 @@ class ProfileViewController: UIViewController,UITableViewDataSource,UITableViewD
                             if let imageToDisplay = UIImage(data: imageData) {
                                 
                                 self.profileImageView.image = imageToDisplay
-                                
                             }
-                            
                         }
                     }
-                    
                 }
-                
-                
-                
-                
-            }
-            
+          }
         }
         
         let query = PFQuery(className: "WorkedWorkouts")
@@ -269,22 +218,12 @@ class ProfileViewController: UIViewController,UITableViewDataSource,UITableViewD
                                 
                             }
                         }
-                        
-                        
                          self.tableView.reloadData()
-                        
                     }
                     
                 }
             }
         }
-        
-       
-        
-       
-      
-        
-        
         
     }
     
@@ -295,6 +234,8 @@ class ProfileViewController: UIViewController,UITableViewDataSource,UITableViewD
             
         }
     }
+    
+    
     
     @IBAction func workoutsPageTabbed(_ sender: Any) {
         self.leadingConstraint.constant = -200

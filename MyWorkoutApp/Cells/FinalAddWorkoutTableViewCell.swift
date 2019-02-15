@@ -8,22 +8,28 @@
 
 import UIKit
 
-class FinalAddWorkoutTableViewCell: UITableViewCell {
+class FinalAddWorkoutTableViewCell: UITableViewCell,UITextFieldDelegate {
+    
+    //This cell takes the information about the final step of creating new workouts
 
     @IBOutlet weak var exerciseName: UILabel!
-    
     @IBOutlet weak var exerciseReps: UITextField!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        exerciseReps.delegate = self
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        exerciseReps.resignFirstResponder()
+        return true
+    }
+   
    
 }
